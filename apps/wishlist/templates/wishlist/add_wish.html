@@ -24,7 +24,7 @@
                 <a href="/logout">Logout</a>
             </div>
             <h2> Create a New Wish List Item </h2>
-                <form action="/addwish" method="POST" > <!--added to all routes/ -->
+                <form action="/wish_items/create" method="POST" > <!--added to all routes/ -->
                     {% csrf_token %}
                     <p>Product: <input type="text" name="item" ></p>
                     

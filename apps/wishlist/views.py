@@ -63,7 +63,7 @@ def add_wish(request):
     return render(request,'wishlist/add_wish.html')
 
 
-def addwish(request):
+def create(request):
     valid = Wish.objects.validate_product(request)
     if valid:
         return redirect('/dashboard')
